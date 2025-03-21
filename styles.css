@@ -8,60 +8,62 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    height: 100vh;
+    background: #005b96;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-.form-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+.app-container {
+    width: 320px;
+    background: #2196F3;
     border-radius: 15px;
-    width: 350px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     text-align: center;
 }
 
-.input-box {
-    margin-bottom: 15px;
+.header {
+    background: #1a237e;
+    color: white;
+    padding: 15px;
 }
 
-input, select {
+.form-container {
+    padding: 20px;
+}
+
+input {
     width: 100%;
     padding: 12px;
-    font-size: 16px;
-    border: 2px solid #ddd;
+    margin: 8px 0;
+    border: none;
     border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
-}
-
-input:focus, select:focus {
-    border-color: #ff416c;
+    font-size: 16px;
+    background: white;
+    text-align: center;
 }
 
 button {
-    background: #ff416c;
-    color: white;
+    width: 100%;
     padding: 12px;
     border: none;
+    background: #ff4b6e;
+    color: white;
     font-size: 18px;
+    border-radius: 25px;
     cursor: pointer;
-    border-radius: 8px;
-    width: 100%;
     margin-top: 10px;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #ff4b2b;
+    background: #e63950;
 }
 
 #result {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
