@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="wrapper">
-        <div class="card">
-            <h1>Welcome to My Web Page</h1>
-            <p id="message">Click the button to change this text!</p>
-            <button onclick="changeText()">Click Me</button>
-        </div>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p>Enter your birthdate and find out your age instantly!</p>
+        <input type="date" id="birthdate">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
