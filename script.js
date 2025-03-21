@@ -1,7 +1,10 @@
 function calculateAge() {
+    let name = document.getElementById('name').value;
+    let gender = document.getElementById('gender').value;
     let birthdate = document.getElementById('birthdate').value;
-    if (!birthdate) {
-        document.getElementById('result').innerText = "⚠️ Please enter a valid date!";
+    
+    if (!name || !gender || !birthdate) {
+        document.getElementById('result').innerText = "⚠️ Please fill in all fields!";
         return;
     }
 
@@ -16,5 +19,5 @@ function calculateAge() {
         age--;
     }
 
-    document.getElementById('result').innerText = `🎉 You are ${age} years old! 🎂`;
+    document.getElementById('result').innerText = `🎉 ${name}, you are ${age} years old! 🎂`;
 }
