@@ -1,29 +1,20 @@
-// Function to change text and color
-function changeText() {
-    let message = document.getElementById("message");
-
-    if (!message) {
-        console.error("Element with ID 'message' not found!");
+function calculateAge() {
+    let birthdate = document.getElementById('birthdate').value;
+    if (!birthdate) {
+        document.getElementById('result').innerText = "Please enter a valid date.";
         return;
     }
 
-    // Fade effect
-    message.style.transition = "opacity 0.5s ease-out";
-    message.style.opacity = 0;
+    let birthDateObj = new Date(birthdate);
+    let today = new Date();
+    
+    let age = today.getFullYear() - birthDateObj.getFullYear();
+    let monthDiff = today.getMonth() - birthDateObj.getMonth();
+    let dayDiff = today.getDate() - birthDateObj.getDate();
 
-    setTimeout(() => {
-        message.innerText = "You clicked the button! 🎉";
-        message.style.color = getRandomColor();
-        message.style.opacity = 1;
-    }, 500);
-}
-
-// Function to generate a random color
-function getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--;
     }
-    return color;
+
+    document.getElementById('result').innerText = `You are ${age} years old.`;
 }
