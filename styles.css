@@ -8,61 +8,51 @@
 }
 
 body {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+.form-container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    text-align: left;
+.input-box {
     margin-bottom: 15px;
-}
-
-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
 }
 
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ff416c;
 }
 
 button {
     background: #ff416c;
     color: white;
-    padding: 12px 20px;
+    padding: 12px;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
     margin-top: 10px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -70,7 +60,7 @@ button:hover {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
     color: #333;
