@@ -1,13 +1,9 @@
 function calculateAge() {
     let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
-    let gender = document.getElementById('gender').value;
     let birthdate = document.getElementById('birthdate').value;
-    let password = document.getElementById('password').value;
 
-    if (!name || !email || !phone || !gender || !birthdate || !password) {
-        document.getElementById('result').innerText = "⚠️ Fill all fields!";
+    if (!name || !birthdate) {
+        document.getElementById('result').innerText = "⚠️ Please fill in all fields!";
         return;
     }
 
