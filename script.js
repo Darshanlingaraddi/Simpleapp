@@ -1,7 +1,7 @@
 function calculateAge() {
     let birthdate = document.getElementById('birthdate').value;
     if (!birthdate) {
-        document.getElementById('result').innerText = "Please enter a valid date.";
+        document.getElementById('result').innerText = "⚠️ Please enter a valid date!";
         return;
     }
 
@@ -16,5 +16,5 @@ function calculateAge() {
         age--;
     }
 
-    document.getElementById('result').innerText = `You are ${age} years old.`;
+    document.getElementById('result').innerText = `🎉 You are ${age} years old! 🎂`;
 }
