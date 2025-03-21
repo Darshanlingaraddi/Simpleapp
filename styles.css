@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     width: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h1 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #333;
 }
 
@@ -37,6 +37,7 @@ h1 {
 
 label {
     font-size: 14px;
+    font-weight: 600;
     color: #555;
     display: block;
     margin-bottom: 5px;
@@ -48,6 +49,7 @@ input, select {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 
 button {
