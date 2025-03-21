@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-container">
-        <div class="header">
-            <h2>Age Calculator</h2>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="input-group">
+            <label for="birthdate">Enter Your Birth Date:</label>
+            <input type="date" id="birthdate" required>
         </div>
-        <div class="form-container">
-            <form id="ageForm">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <input type="date" id="birthdate" required>
-                <button type="button" onclick="calculateAge()">Calculate Age</button>
-            </form>
-            <div id="result"></div
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div class="result" id="result">
+            <h2>Your Age Details</h2>
+            <p>Your age is: <span class="highlight" id="age"></span> years</p>
+            <p>You have lived for: <span class="highlight" id="days"></span> days</p>
+            <p>Next birthday in: <span class="highlight" id="nextBirthday"></span> days</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
